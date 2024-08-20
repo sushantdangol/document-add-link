@@ -1,10 +1,9 @@
 <?php
 
-require 'vendor/autoload.php';
 
 $fileNameArr = [];
 
-$file = '../files/text.docx';
+$file = $argv[1];
 $directory = dirname($file);
 
 $f = pathinfo($file, PATHINFO_FILENAME);
